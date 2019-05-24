@@ -10,30 +10,47 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: pink;
+  background-image: linear-gradient(
+    to top,
+    #6d5663,
+    #7c6278,
+    #876f90,
+    #8e7eaa,
+    #8f8fc4,
+    #968fcf,
+    #9f8ed9,
+    #aa8ce2,
+    #ce6eca,
+    #ea49a0,
+    #f61868,
+    #ed0026
+  );
 }
 
+.symp.clicked {
+  background: greenyellow;
+}
 
 .symptom {
   padding: 50px;
 }
 
-
 .search {
-  color: violet;
+  background-color: #051937;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
+  /* background-color: #00ffa6; */
   padding: 10px;
- }
- .grid-item {
+  margin: 30px;
+}
+.grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
- }
-
+  padding: 30px 40px;
+}
