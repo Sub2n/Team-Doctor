@@ -189,6 +189,14 @@ $(document).ready(function() {
     $parts.innerHTML = inner;
   }
 
+  $parts.addEventListener('mouseover', function(e) {
+    e.target.classList.add('hover');
+  });
+
+  $parts.addEventListener('mouseout', function(e) {
+    e.target.classList.remove('hover');
+  })
+
   $headPart.addEventListener('click', function() {
     checkSelectedPart('머리');
   });
@@ -259,7 +267,7 @@ $(document).ready(function() {
   }
   $parts.addEventListener('click', function(e) {
     console.dir(e.target);
-    if (e.target.className === 'part') {
+    if (e.target.classList.contains('part')) {
       const partName = e.target.innerText;
       checkSelectedPartDetail(partName);
     }
