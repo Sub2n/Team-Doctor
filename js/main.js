@@ -161,7 +161,7 @@ $(document).ready(function(){
   const $headPart = document.querySelector('.head-box');
   const $upperPart = document.querySelector('.upper-box');
   const $lowerPart = document.querySelector('.lower-box');
-  const $parts = document.querySelector('.parts.flex-wrap');
+  const $parts = document.querySelector('.parts');
 
   // 머리, 상체, 하체 선택되면 localStorage에 반영
   function checkSelectedPart(part) {
