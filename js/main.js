@@ -181,9 +181,7 @@ $(document).ready(function() {
   }
 
   function showParts(part) {
-    console.log(part);
     const detailParts = part.detail;
-    console.log(detailParts);
     let inner = '';
     detailParts.forEach(element => {
       inner += `<button class="part">${element.id}</button>`;
@@ -201,5 +199,32 @@ $(document).ready(function() {
 
   $lowerPart.addEventListener('click', function() {
     checkSelectedPart('하체');
+  });
+
+  function checkSelectedPartDetail(part) {
+    const parts = JSON.parse(localStorage.getItem(partskey));
+    let checkedPart, selectedPart;
+    parts.forEach(element => {
+      if (element.checked) checkedPart = element;
+    });
+    checkedPart = checkedPart.detail;
+
+    checkedPart.forEach(element => {
+      if (element.id === part) {
+        element.checked = true;
+        selectedPart = element;
+      }
+    });
+    localStorage.setItem(partskey, JSON.stringify(parts));
+    localStorage.setItem('checkedPart', JSON.stringify(checkedPart));
+    localStorage.setItem('selectedPart', JSON.stringify(selectedPart));
+    location.href = 'symptom.html';
+  }
+  $parts.addEventListener('click', function(e) {
+    console.dir(e.target);
+    if (e.target.className === 'part') {
+      const partName = e.target.innerText;
+      checkSelectedPartDetail(partName);
+    }
   });
 });
