@@ -85,15 +85,19 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 250px;
+  position: relative;
 }
 
-.body-box.head-hover, .body-box.head-click {
+.body-box.head-hover,
+.body-box.head-click {
   background-image: url(/src/img/human-head.png);
 }
-.body-box.upper-hover, .body-box.upper-click {
+.body-box.upper-hover,
+.body-box.upper-click {
   background-image: url(/src/img/human-upper.png);
 }
-.body-box.lower-hover, .body-box.lower-click {
+.body-box.lower-hover,
+.body-box.lower-click {
   background-image: url(/src/img/human-lower.png);
 }
 
@@ -119,20 +123,49 @@
 }
 
 .head-box {
-  background: tomato;
   margin-top: 30px;
-  width: 10vw;
-  height: 10vh;
+  width: 55px;
+  left: 126px;
+  height: 90px;
+  top: 90px;
+  position: absolute;
+  display: inline-block;
 }
 
 .upper-box {
-  background: yellow;
-  height: 25vh;
+  height: 213px;
+  left: 0px;
+  top: 208px;
+  position: absolute;
+  display: inline-block;
+}
+
+.hand1,
+.hand2 {
+  position: absolute;
+  display: inline-block;
+}
+.hand1 {
+  height: 90px;
+  left: -7px;
+  top: 212px;
+  width: 50px;
+}
+
+.hand2 {
+  height: 90px;
+  left: 100px;
+  top: 212px;
+  width: 50px;
 }
 
 .lower-box {
-  background: skyblue;
-  height: 40vh;
+  height: 362px;
+  width: 221px;
+  bottom: 120px;
+  left: 43px;
+  position: absolute;
+  display: inline-block;
 }
 
 /* human_parts */
