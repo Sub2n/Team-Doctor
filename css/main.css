@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.contentwrap {
+position: relative;
+/* padding: 120px 20%; */
+z-index: 5;
+background: white;
+text-align: center;
+height: 100vh;
+}
+
+.photowrap {
+height: 100vh;
+position: relative;
+top: 0;
+overflow: hidden;
+z-index: 0;
+}
+
+.photowrap #myVideo { 
+/* Make video to at least 100% wide and tall */
+min-width: 100vw; 
+min-height: 100vh; 
+
+/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+width: auto;
+height: auto;
+
+/* Center the video */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-55%);
+opacity: 0.5;
+}
