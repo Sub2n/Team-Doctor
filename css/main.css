@@ -61,3 +61,24 @@ opacity: 0.5;
   flex-direction: column;
   background-color: aqua;
 }
+
+.head-box, .upper-box, .lower-box {
+  width: 100%;
+}
+
+.head-box {
+  background: tomato;
+  height: 20vh;
+}
+
+.upper-box {
+  background: yellow;
+  height: 40vh;
+
+}
+
+.lower-box {
+  background: skyblue;
+  height: 40vh;
+
+} 
