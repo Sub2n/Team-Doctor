@@ -1,4 +1,6 @@
 
+const $hideMap = document.querySelector('#hide-map');
+
 // 마커를 담을 배열입니다
 let markers = [];
 
@@ -150,9 +152,16 @@ function displayPlaces(places) {
                 const $list = document.querySelector('#menu_wrap');
                 $list.classList.add('list-act');
                 $shadow.classList.add('shadow-hide');
-              }
-            }
+                $hideMap.classList.add('show');
 
+                const mapButtons = document.querySelectorAll('button.view-map');
+                [...mapButtons].forEach(elem => {
+                  elem.classList.add('hide');
+                  elem.classList.remove('show');
+                });
+    
+            }
+          }
             
         })(marker, places[i].place_name);
 
@@ -167,6 +176,21 @@ function displayPlaces(places) {
     map.setBounds(bounds);
 }
 
+$hideMap.addEventListener('click', function() {
+  const $shadow = document.querySelector('#shadow');
+  const $list = document.querySelector('#menu_wrap');
+  $list.classList.remove('list-act');
+  $shadow.classList.remove('shadow-hide');
+  this.classList.remove('show');
+  const mapButtons = document.querySelectorAll('button.view-map');
+  console.log(mapButtons);
+  [...mapButtons].forEach(elem => {
+    elem.classList.remove('hide');
+    elem.classList.add('show');
+    console.log(elem);
+  });
+
+});
 
 // 검색결과 항목을 Element로 반환하는 함수입니다
 function getListItem(index, places) {
@@ -185,7 +209,7 @@ function getListItem(index, places) {
                  
       itemStr += '  <span class="tel">' + places.phone  + '</span>' +
                 '</div>';   
-      itemStr += `<div class="buttons"><button class="reservation btn btn-info" data-toggle="modal" data-target="#exampleModal">예약</button><button class="view-map btn btn-info">지도보기</button></div>`        
+      itemStr += `<div class="buttons"><button class="reservation btn btn-info" data-toggle="modal" data-target="#exampleModal">예약</button><button class="view-map btn btn-info">지도보기</button></div>`;      
 
     el.innerHTML = itemStr;
     el.className = 'item';
