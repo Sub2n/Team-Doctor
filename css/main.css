@@ -60,6 +60,9 @@
 .body-box {
   width: 30vw;
   background: lime;
+  background-image: url(/src/img/human-body.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main-human-body {
@@ -72,17 +75,18 @@
   background: pink;
 }
 
-.body .flex-wrap {
+/* .body .flex-wrap {
   display: flex;
   flex-direction: column;
   background-color: aqua;
   align-items: stretch;
-}
+} */
 
 .head-box,
 .upper-box,
 .lower-box {
   width: 100%;
+  opacity: 0.3;
 }
 
 .head-box {
