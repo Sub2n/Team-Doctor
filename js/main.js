@@ -181,9 +181,7 @@ $(document).ready(function(){
   }
 
   function showParts(part) {
-    console.log(part);
     const detailParts = part.detail;
-    console.log(detailParts);
     let inner = '';
     detailParts.forEach(element => {
       inner += `<button class="part">${element.id}</button>`;
@@ -202,5 +200,12 @@ $(document).ready(function(){
   $lowerPart.addEventListener('click', function() {
     checkSelectedPart('하체');
   });
+
+  $parts.addEventListener('click', function(e) {
+    console.dir(e.target);
+    const partName = e.target.innerText;
+    const parts = JSON.parse(localStorage.getItem(partskey));
+
+  })
   
 });
