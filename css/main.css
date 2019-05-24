@@ -87,18 +87,29 @@
   margin-left: 250px;
 }
 
+.body-box.head-hover, .body-box.head-click {
+  background-image: url(/src/img/human-head.png);
+}
+.body-box.upper-hover, .body-box.upper-click {
+  background-image: url(/src/img/human-upper.png);
+}
+.body-box.lower-hover, .body-box.lower-click {
+  background-image: url(/src/img/human-lower.png);
+}
+
 .parts-box {
   width: 60vw;
   height: 100vh;
   padding: 50px;
   margin-right: 100px;
 }
-/* .body .flex-wrap {
+
+.body .flex-wrap {
   display: flex;
   flex-direction: column;
   background-color: aqua;
-  align-items: stretch;
-} */
+  align-items: center;
+}
 
 .head-box,
 .upper-box,
@@ -108,17 +119,19 @@
 }
 
 .head-box {
-  /* background: tomato; */
-  height: 25vh;
+  background: tomato;
+  margin-top: 30px;
+  width: 10vw;
+  height: 10vh;
 }
 
 .upper-box {
-  /* background: yellow; */
+  background: yellow;
   height: 25vh;
 }
 
 .lower-box {
-  /* background: skyblue; */
+  background: skyblue;
   height: 40vh;
 }
 
