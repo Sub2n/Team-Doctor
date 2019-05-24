@@ -39,7 +39,11 @@
   top:0;left:0;
   z-index:1;
   width: 100vw; height: 100vh; 
-  background-color: rgba(26, 188, 156, 0.8);
+  background: #1ABC9C;
+  background: -webkit-linear-gradient(bottom left, #FECDDE, #1ABC9C);
+  background: -moz-linear-gradient(bottom left, #FECDDE, #1ABC9C);
+  background: linear-gradient(to bottom left, #FECDDE, #1ABC9C);
+  opacity: 0.7;
 }
 #shadow.shadow-hide {
   display: none;
@@ -80,4 +84,10 @@
   text-align: center;
   font-size: 2rem;
   margin-top: 5px;
+}
+#exampleModalLabel {
+  font-size: 2rem;
+}
+.modal-body .input-group{
+  margin: 10px 0; 
 }

@@ -20,8 +20,6 @@
         <button id="hide-map" class="btn btn-info">숨기기</button>
       </div>
       <ul id="placesList">
-        <li>  <a id="demo01" href="#animatedModal">DEMO01</a>
-        </li>
       </ul>
       <div id="pagination"></div>
     </div>
@@ -36,11 +34,46 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <div class="input-group flex-nowrap">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">이름</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">메일</span>
+              </div>
+              <input type="text" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">전화번호</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Phone Number" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">예약 날짜</span>
+              </div>
+              <input type="date" class="form-control" placeholder="Date" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">예약 시간</span>
+              </div>
+              <input type="time" class="form-control" placeholder="Time" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">메모</span>
+              </div>
+              <textarea class="form-control" placeholder="전달할 메모를 작성해주세요." aria-label="With textarea"></textarea>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
-            <button type="button" class="btn btn-primary">예약</button>
+            <button type="button" class="btn btn-info">예약</button>
           </div>
         </div>
       </div>
