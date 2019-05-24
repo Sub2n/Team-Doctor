@@ -3,8 +3,9 @@
   padding: 0;
   margin: 0;
 }
-.container {
+.flex-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
