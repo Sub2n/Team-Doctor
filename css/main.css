@@ -1,48 +1,59 @@
+/* CSS reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-.main-page {
-position: relative;
-/* padding: 120px 20%; */
-z-index: 5;
-background: white;
-text-align: center;
-height: 100vh;
-}
+/* landing_page */
 
 .landing-page {
-height: 100vh;
-position: relative;
-top: 0;
-overflow: hidden;
-z-index: 0;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
 }
 
-.landing-page #myVideo { 
-/* Make video to at least 100% wide and tall */
-min-width: 100vw; 
-min-height: 100vh; 
-
-/* Setting width & height to auto prevents the browser from stretching or squishing the video */
-width: auto;
-height: auto;
-
-/* Center the video */
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-55%);
-opacity: 0.5;
+.landing-page-title {
+  font-size: 7em;
 }
+
+.landing-page #myVideo {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100vw;
+  min-height: 100vh;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  opacity: 0.5;
+}
+
+/* main_page */
+
+.main-page {
+  position: relative;
+  z-index: 5;
+  background: white;
+  text-align: center;
+  height: 100vh;
+}
+
+/* human_body */
 
 .main-page {
   display: flex;
 }
 
-.body-box, .parts {
+.body-box,
+.parts {
   display: inline-block;
 }
 
@@ -51,6 +62,11 @@ opacity: 0.5;
   background: lime;
 }
 
+.main-human-body {
+  height: 90vh;
+  position: absolute;
+  margin: 35px;
+}
 .parts-box {
   width: 70vw;
   background: pink;
@@ -63,7 +79,9 @@ opacity: 0.5;
   align-items: stretch;
 }
 
-.head-box, .upper-box, .lower-box {
+.head-box,
+.upper-box,
+.lower-box {
   width: 100%;
 }
 
@@ -75,18 +93,28 @@ opacity: 0.5;
 .upper-box {
   background: yellow;
   height: 40vh;
-
 }
 
 .lower-box {
   background: skyblue;
   height: 40vh;
+}
 
-} 
+/* human_parts */
 
 .parts.flex-wrap {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
+}
+
+/* main title */
+.main-page-title {
+  font-size: 3em;
+  float: left;
+  background-color: aqua;
+  position: absolute;
+  z-index: 10;
+  left: 30vw;
 }

@@ -150,7 +150,7 @@ function init() {
 }
 
 $(document).ready(function(){
-  $.parallax({
+  $.myparallax({
     photowrap: ".photowrap",
     speed: .75 // This has to be a number from 0 to 1.
   });
