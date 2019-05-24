@@ -204,7 +204,7 @@ $(document).ready(function() {
   $headPart.addEventListener('mouseover', function() {
     this.parentNode.parentNode.classList.add('head-hover');
   });
-  
+
   $headPart.addEventListener('mouseout', function() {
     this.parentNode.parentNode.classList.remove('head-hover');
   });
@@ -212,7 +212,7 @@ $(document).ready(function() {
   $upperPart.addEventListener('mouseover', function() {
     this.parentNode.parentNode.classList.add('upper-hover');
   });
-  
+
   $upperPart.addEventListener('mouseout', function() {
     this.parentNode.parentNode.classList.remove('upper-hover');
   });
@@ -220,7 +220,7 @@ $(document).ready(function() {
   $lowerPart.addEventListener('mouseover', function() {
     this.parentNode.parentNode.classList.add('lower-hover');
   });
-  
+
   $lowerPart.addEventListener('mouseout', function() {
     this.parentNode.parentNode.classList.remove('lower-hover');
   });
@@ -232,11 +232,11 @@ $(document).ready(function() {
   $upperPart.addEventListener('click', function() {
     this.parentNode.parentNode.className = 'body-box upper-click';
   });
-  
+
   $lowerPart.addEventListener('click', function() {
     this.parentNode.parentNode.className = 'body-box lower-click';
   });
-  
+
   function checkSelectedPartDetail(part) {
     const parts = JSON.parse(localStorage.getItem(partskey));
     let checkedPart, selectedPart;

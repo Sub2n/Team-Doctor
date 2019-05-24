@@ -1,4 +1,7 @@
 /* CSS reset */
+body {
+  font-family: 'Black Han Sans', sans-serif;
+}
 * {
   box-sizing: border-box;
   padding: 0;
