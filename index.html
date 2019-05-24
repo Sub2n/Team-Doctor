@@ -4,72 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./hw-parallax.min.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="src/jquery.parallaxscrolling.js"></script>
-  <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-  .contentwrap {
-    position: relative;
-    /* padding: 120px 20%; */
-    z-index: 5;
-    background: white;
-    text-align: center;
-    height: 100vh;
-  }
-
-  .photowrap {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    overflow: hidden;
-    z-index: 0;
-  }
-
-  .photowrap video { 
-    /* Make video to at least 100% wide and tall */
-    min-width: 100vw; 
-    min-height: 100vh; 
-    
-    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
-    height: auto;
-    
-    /* Center the video */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0.5;
-   }
-  </style>
+  <link rel="stylesheet" href="./css/main.css">
   <title>Document</title>
 </head>
 <body>
   
-    <div class="photowrap">
-      <video autoplay muted loop id="myVideo">
-        <source src="./src/herz.mp4" type="video/mp4">
-      </video>
+  <div class="landing-page">
+    <video autoplay muted loop id="myVideo">
+      <source src="./src/herz.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <main class="main-page">
+    <h1 style="position: absolute">부위, 증상 선택 페이지</h1>
+
+    <div class="body-box">
+      <div class="flex-wrap">
+        <div class="head-box"></div>
+        <div class="upper-box"></div>
+        <div class="lower-bow"></div>
+      </div>
     </div>
-  
-    <div class="contentwrap">
-      <h1>ㅎㅎㅎㅎㅎㅎㅎㅎㅎ</h1>
+
+    <div class="parts">
+
     </div>
+  </main>
   
-  <script>
-    $(document).ready(function(){
-      $.parallax({
-        photowrap: ".photowrap",
-        speed: .75 // This has to be a number from 0 to 1.
-      });
-    });
-  </script>
+  <script src="./js/main.js"></script>
 
 </body>
 </html>
