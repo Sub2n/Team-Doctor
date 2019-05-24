@@ -13,8 +13,14 @@
   background: pink;
 }
 
+.symptom {
+  padding: 50px;
+}
 .symp {
   padding: 70px;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
+.search {
+  color: violet;
+}
