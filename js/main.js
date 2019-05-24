@@ -189,6 +189,14 @@ $(document).ready(function() {
     $parts.innerHTML = inner;
   }
 
+  $parts.addEventListener('mouseover', function(e) {
+    e.target.classList.add('hover');
+  });
+
+  $parts.addEventListener('mouseout', function(e) {
+    e.target.classList.remove('hover');
+  })
+
   $headPart.addEventListener('click', function() {
     checkSelectedPart('머리');
   });
