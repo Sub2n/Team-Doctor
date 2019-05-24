@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="src/jquery.parallaxscrolling.js"></script>
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
-</head>
-<body>
-  
-  <div class="landing-page">
-    <video autoplay muted loop id="myVideo">
-      <source src="./src/herz.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <main class="main-page">
-    <h1 style="position: absolute">부위, 증상 선택 페이지</h1>
-
-    <div class="body-box">
-      <div class="flex-wrap">
-        <div class="head-box"></div>
-        <div class="upper-box"></div>
-        <div class="lower-box"></div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="src/jquery.parallaxscrolling.js"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ----- -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- landing page -->
+    <div class="landing-page">
+      <span class="landing-page-title">Team Doctor</span>
+      <video autoplay muted loop id="myVideo">
+        <source src="./src/herz.mp4" type="video/mp4" />
+      </video>
     </div>
 
-    <div class="parts-box">
-      <div class ="parts flex-wrap">
+    <!-- main contents -->
+    <main class="main-page">
+      <h1 style="position: absolute">부위, 증상 선택 페이지</h1>
+      <div class="body-box">
+        <img class="main-human-body" src="src/img/human-body.png" />
+        <div class="flex-wrap">
+          <div class="head-box"></div>
+          <div class="upper-box"></div>
+          <div class="lower-box"></div>
+        </div>
       </div>
-    </div>
-  </main>
-  
-  <script src="./js/main.js"></script>
+      <!-- # -->
+      <div>
+        <h1 class="main-page-title">Choose a Part</h1>
+        <hr class="title-underline" />
+      </div>
 
-</body>
+      <!-- 동적으로 데이터 받을 곳 -->
+      <div class="parts-box">
+        <div class="parts flex-wrap"></div>
+      </div>
+    </main>
+
+    <!-- script parts -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
