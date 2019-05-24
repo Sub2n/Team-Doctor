@@ -12,9 +12,15 @@
   height: 100vh;
   background: pink;
 }
-.symp {
-  padding: 70px;
-  margin: 30px;
+
+
+.symptom {
+  padding: 50px;
+}
+
+
+.search {
+  color: violet;
 }
 
 .grid-container {
@@ -30,3 +36,4 @@
   font-size: 30px;
   text-align: center;
  }
+

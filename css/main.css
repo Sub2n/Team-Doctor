@@ -80,18 +80,17 @@
 
 .body-box {
   width: 30vw;
-  background: lime;
   background-image: url(/src/img/human-body.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 100px;
+  margin-left: 250px;
 }
 
 .parts-box {
-  width: 70vw;
+  width: 60vw;
   height: 100vh;
-  padding: 100px;
+  padding: 50px;
   margin-right: 100px;
 }
 /* .body .flex-wrap {
@@ -109,17 +108,17 @@
 }
 
 .head-box {
-  background: tomato;
+  /* background: tomato; */
   height: 25vh;
 }
 
 .upper-box {
-  background: yellow;
+  /* background: yellow; */
   height: 25vh;
 }
 
 .lower-box {
-  background: skyblue;
+  /* background: skyblue; */
   height: 40vh;
 }
 
@@ -135,26 +134,6 @@
 
 .parts button {
   padding: 10px 50px 10px 50px;
-  /* border: 1px solid #181818; */
   border-radius: 10px;
   margin-right: 50px;
-}
-
-/* main title */
-.main-page-title {
-  font-size: 3em;
-  float: left;
-  z-index: 10;
-  left: 30vw;
-  position: absolute;
-  margin-top: 300px;
-}
-
-/* symptoms */
-.symptoms {
-  color: aqua;
-}
-.symp button {
-  color: red;
-  padding: 10px 50px 10px 50px;
 }
