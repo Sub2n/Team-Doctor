@@ -7,7 +7,6 @@
 #menu_wrap .option{text-align: center;}
 #menu_wrap .option p {margin:10px 0;}  
 #menu_wrap .option button {margin-left:5px;}
-#shadow {display:none;position: absolute;top:0;left:0;z-index:1;width: 100vw; height: 100vh; background-color: rgba(26, 188, 156, 0.8);}
 #placesList li {list-style: none;}
 #placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
 #placesList .item span {display: block;margin-top:4px;}
@@ -35,3 +34,17 @@
 #pagination {margin:10px auto;text-align: center;}
 #pagination a {display:inline-block;margin-right:10px;}
 #pagination .on {font-weight: bold; cursor: default;color:#777;}
+#shadow {
+  position: absolute;
+  top:0;left:0;
+  z-index:1;
+  width: 100vw; height: 100vh; 
+  background-color: rgba(26, 188, 156, 0.8);
+}
+#shadow.shadow-hide {
+  display: none;
+}
+#menu_wrap.list-act {
+  left: 0;
+  transform: translateX(0);
+}
