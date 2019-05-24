@@ -267,7 +267,7 @@ $(document).ready(function() {
   }
   $parts.addEventListener('click', function(e) {
     console.dir(e.target);
-    if (e.target.className === 'part') {
+    if (e.target.classList.contains('part')) {
       const partName = e.target.innerText;
       checkSelectedPartDetail(partName);
     }
