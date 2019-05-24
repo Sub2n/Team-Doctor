@@ -219,7 +219,9 @@ $(document).ready(function() {
     localStorage.setItem(partskey, JSON.stringify(parts));
     localStorage.setItem('checkedPart', JSON.stringify(checkedPart));
     localStorage.setItem('selectedPart', JSON.stringify(selectedPart));
-    location.href = "symptom.html";
+    
+    location.href = 'symptom.html';
+
   }
   $parts.addEventListener('click', function(e) {
     console.dir(e.target);
@@ -227,6 +229,6 @@ $(document).ready(function() {
       const partName = e.target.innerText;
       checkSelectedPartDetail(partName);
     }
-  })
-  
+  });
+
 });

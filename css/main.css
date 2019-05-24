@@ -17,7 +17,20 @@
 
 .landing-page-title {
   font-size: 7em;
-  text-align: center;
+  color: black;
+  display: block;
+  margin-top: 330px;
+  margin-left: 400px;
+
+  /* position: absolute; */
+  /* left: 50%;
+  top: 30%; */
+}
+.landing-page-subtitle {
+  font-size: 1.7em;
+  color: black;
+  display: block;
+  margin-left: 410px;
 }
 
 .landing-page #myVideo {
@@ -56,7 +69,6 @@
 
 .main-page {
   display: flex;
-  background: red;
 }
 
 /* human_body */
@@ -79,7 +91,6 @@
 .parts-box {
   width: 70vw;
   height: 100vh;
-  background: pink;
   padding: 100px;
   margin-right: 100px;
 }
@@ -94,17 +105,17 @@
 .upper-box,
 .lower-box {
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .head-box {
   background: tomato;
-  height: 20vh;
+  height: 25vh;
 }
 
 .upper-box {
   background: yellow;
-  height: 40vh;
+  height: 25vh;
 }
 
 .lower-box {
@@ -116,14 +127,15 @@
 
 .parts.flex-wrap {
   display: flex;
-  /* height: 100vh; */
   align-items: center;
   justify-content: left;
+  height: 80vh;
+  margin: 20px;
 }
 
 .parts button {
   padding: 10px 50px 10px 50px;
-  border: 1px solid #181818;
+  /* border: 1px solid #181818; */
   border-radius: 10px;
   margin-right: 50px;
 }
@@ -132,13 +144,17 @@
 .main-page-title {
   font-size: 3em;
   float: left;
-  background-color: aqua;
-  /* position: absolute; */
   z-index: 10;
   left: 30vw;
   position: absolute;
+  margin-top: 300px;
 }
 
-.contents-box {
-  background: gold;
+/* symptoms */
+.symptoms {
+  color: aqua;
+}
+.symp button {
+  color: red;
+  padding: 10px 50px 10px 50px;
 }
