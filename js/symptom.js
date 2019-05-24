@@ -23,8 +23,9 @@ function checkSelectedSymptom(symptom) {
   });
 }
 
+// 증상 클릭시 checked = true
 $symptoms.addEventListener('click', function(e) {
-  if (e.target.className === 'symp') {
+  if (e.target.classList.contains('symp')) {
     checkSelectedSymptom(e.target.innerText);
   }
 });
@@ -41,6 +42,7 @@ function indexOfMax(arr) {
   return maxIndex;
 }
 
+// 병원 찾기 버튼
 $submit.addEventListener('click', function() {
   let hospitalCollection = [];
   let countHospital = Array(10);
@@ -50,12 +52,9 @@ $submit.addEventListener('click', function() {
       hospitalCollection = [...hospitalCollection, ...element.hospital];
     }
   });
-  console.log(hospitalCollection);
-  console.log(countHospital);
   hospitalCollection.forEach(element => {
     countHospital.splice(element, 1, countHospital[element] + 1);
   });
-  console.log(countHospital);
 
   const hospitalCodes = JSON.parse(localStorage.getItem(hospitalkey));
   const hospital = hospitalCodes[indexOfMax(countHospital)];
