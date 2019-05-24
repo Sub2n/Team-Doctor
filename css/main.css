@@ -17,6 +17,7 @@
 
 .landing-page-title {
   font-size: 7em;
+  text-align: center;
 }
 
 .landing-page #myVideo {
@@ -36,6 +37,13 @@
   opacity: 0.5;
 }
 
+.scroll-down-icon {
+  width: 70px;
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
+  transform: translateX(50%);
+}
 /* main_page */
 
 .main-page {
@@ -46,11 +54,12 @@
   height: 100vh;
 }
 
-/* human_body */
-
 .main-page {
   display: flex;
+  background: red;
 }
+
+/* human_body */
 
 .body-box,
 .parts {
@@ -61,20 +70,19 @@
   width: 30vw;
   background: lime;
   background-image: url(/src/img/human-body.png);
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-left: 100px;
 }
 
-.main-human-body {
-  height: 90vh;
-  position: absolute;
-  margin: 35px;
-}
 .parts-box {
   width: 70vw;
+  height: 100vh;
   background: pink;
+  padding: 100px;
+  margin-right: 100px;
 }
-
 /* .body .flex-wrap {
   display: flex;
   flex-direction: column;
@@ -108,9 +116,16 @@
 
 .parts.flex-wrap {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+}
+
+.parts button {
+  padding: 10px 50px 10px 50px;
+  border: 1px solid #181818;
+  border-radius: 10px;
+  margin-right: 50px;
 }
 
 /* main title */
@@ -118,7 +133,12 @@
   font-size: 3em;
   float: left;
   background-color: aqua;
-  position: absolute;
+  /* position: absolute; */
   z-index: 10;
   left: 30vw;
+  position: absolute;
+}
+
+.contents-box {
+  background: gold;
 }
