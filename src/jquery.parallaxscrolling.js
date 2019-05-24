@@ -7,7 +7,7 @@
 */
 (function($){
     $.extend({
-        parallax: function(useroptions){
+        myparallax: function(useroptions){
             
             // Define options and extend with the useroptions
             var options = {

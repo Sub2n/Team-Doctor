@@ -60,27 +60,33 @@
 .body-box {
   width: 30vw;
   background: lime;
+  background-image: url(/src/img/human-body.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 .main-human-body {
   height: 90vh;
   position: absolute;
   margin: 35px;
 }
-.parts {
+.parts-box {
   width: 70vw;
   background: pink;
 }
 
-.body .flex-wrap {
+/* .body .flex-wrap {
   display: flex;
   flex-direction: column;
   background-color: aqua;
-}
+  align-items: stretch;
+} */
 
 .head-box,
 .upper-box,
 .lower-box {
   width: 100%;
+  opacity: 0.3;
 }
 
 .head-box {
@@ -100,12 +106,19 @@
 
 /* human_parts */
 
+.parts.flex-wrap {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main title */
 .main-page-title {
   font-size: 3em;
   float: left;
   background-color: aqua;
-}
-
-.title-underline {
-  color: royalblue;
+  position: absolute;
+  z-index: 10;
+  left: 30vw;
 }
