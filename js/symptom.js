@@ -9,7 +9,7 @@ function init() {
   const symptoms = selectedPart.array;
   let inner = '';
   symptoms.forEach(element => {
-    inner += `<button class="symp">${element.id}</button>`;
+    inner += `<button class="symp grid-item">${element.id}</button>`;
   });
   $symptoms.innerHTML = inner;
 }

@@ -48,3 +48,36 @@
   left: 0;
   transform: translateX(0);
 }
+.view-map.hide {
+  display: none;
+}
+.view-map.show {
+  display: inline-block;
+}
+#hide-map {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+#hide-map.show {
+  display: block;
+}
+#placesList {
+  padding-top: 30px;
+}
+.buttons {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  text-align: right;
+}
+.buttons button {
+  margin: 0 5px;
+}
+.title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5px;
+}
