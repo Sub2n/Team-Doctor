@@ -10,25 +10,19 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(
-    to top,
-    #6d5663,
-    #7c6278,
-    #876f90,
-    #8e7eaa,
-    #8f8fc4,
-    #968fcf,
-    #9f8ed9,
-    #aa8ce2,
-    #ce6eca,
-    #ea49a0,
-    #f61868,
-    #ed0026
-  );
+  background: #1ABC9C;
+  background: -webkit-linear-gradient(top right, #FECDDE, #1ABC9C);
+  background: -moz-linear-gradient(top right, #FECDDE, #1ABC9C);
+  background: linear-gradient(to bottom left, #FECDDE, #1ABC9C);
 }
 
+.symp {
+  color: #26C6DA;
+  opacity: 0.7;
+}
 .symp.clicked {
-  background: greenyellow;
+  background: rgba(38, 198, 218, 0.8);
+  color: white;
 }
 
 .symptom {

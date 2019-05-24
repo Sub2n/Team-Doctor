@@ -27,6 +27,7 @@ function checkSelectedSymptom(symptom) {
 $symptoms.addEventListener('click', function(e) {
   if (e.target.classList.contains('symp')) {
     checkSelectedSymptom(e.target.innerText);
+    e.target.classList.toggle('clicked');
   }
 });
 
