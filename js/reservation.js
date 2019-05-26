@@ -1,5 +1,6 @@
 
 const $hideMap = document.querySelector('#hide-map');
+const $reservationBtn = document.querySelector('#reservation-btn');
 
 // 마커를 담을 배열입니다
 let markers = [];
@@ -190,6 +191,12 @@ $hideMap.addEventListener('click', function() {
     console.log(elem);
   });
 
+});
+
+$reservationBtn.addEventListener('click', function() {
+    console.log('예약')
+    alert('예약되었습니다.');
+    location.href = "index.html";
 });
 
 // 검색결과 항목을 Element로 반환하는 함수입니다
