@@ -72,103 +72,87 @@ body {
 
 .main-page {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* human_body */
 
-.body-box,
-.parts {
-  display: inline-block;
-}
-
 .body-box {
   width: 30vw;
-  background-image: url(/src/img/human-body.png);
+  background-image: url("http://drive.google.com/uc?export=view&id=1GOxWmRIXmnwjpJQss3TBc5NDjphSKpNF");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 250px;
   position: relative;
+  height: 100vh;
 }
 
 .body-box.head-hover,
 .body-box.head-click {
-  background-image: url(/src/img/human-head.png);
+  background-image: url("http://drive.google.com/uc?export=view&id=1icFkXH9zt5ULPSsVOHyl963EHcxbTZby");
 }
 .body-box.upper-hover,
 .body-box.upper-click {
-  background-image: url(/src/img/human-upper.png);
+  background-image: url("http://drive.google.com/uc?export=view&id=1MGKswufCe8VL9uH8lIu1F327Qr9i834h");
 }
 .body-box.lower-hover,
 .body-box.lower-click {
-  background-image: url(/src/img/human-lower.png);
+  background-image: url("http://drive.google.com/uc?export=view&id=1nvmuE0K0ek2gOFjuO31gfmVs3Q43lt-A");
 }
 
-.parts-box {
+.contents-box {
   width: 60vw;
   height: 100vh;
   padding: 50px;
-  margin-right: 100px;
-}
-
-.body .flex-wrap {
-  display: flex;
-  flex-direction: column;
-  background-color: aqua;
-  align-items: center;
 }
 
 .head-box,
 .upper-box,
 .lower-box {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .head-box {
-  margin-top: 30px;
-  width: 55px;
-  left: 126px;
-  height: 90px;
-  top: 90px;
   position: absolute;
-  display: inline-block;
+  top: 0;
+  left: 12.5vw;
+  width: 5vw;
+  height: 14vh
 }
 
 .upper-box {
-  height: 213px;
-  left: 0px;
-  top: 208px;
-  position: absolute;
-  display: inline-block;
+position: absolute;
+  top: 14vh;
+  left: 2.5vw;
+  width: 25vw;
+  height: 32vh;
 }
 
-.hand1,
-.hand2 {
+.upper-box.hand1,
+.upper-box.hand2 {
   position: absolute;
-  display: inline-block;
+  width: 5vw;
+  top: 32vh;
+  height: 14vh;
 }
-.hand1 {
-  height: 90px;
-  left: -7px;
-  top: 212px;
-  width: 50px;
+.upper-box.hand1 {
+  left: 0;
 }
 
-.hand2 {
-  height: 90px;
-  left: 100px;
-  top: 212px;
-  width: 50px;
+.upper-box.hand2 {
+  left: 20vw;
+  right: 0;
 }
 
 .lower-box {
-  height: 362px;
-  width: 221px;
-  bottom: 120px;
-  left: 43px;
   position: absolute;
-  display: inline-block;
+  width: 15vw;
+  left: 7.5vw;
+  height: 54vh;
+  top: 46vh;
 }
 
 /* human_parts */
@@ -189,7 +173,6 @@ body {
   background: white;
   font-size: 1.5rem;
   color: #26C6DA;
-  
 }
 .parts button.hover {
   background: rgba(38, 198, 218, 0.8);

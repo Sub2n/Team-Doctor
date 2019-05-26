@@ -210,39 +210,39 @@ $(document).ready(function() {
   });
 
   $headPart.addEventListener('mouseover', function() {
-    this.parentNode.parentNode.classList.add('head-hover');
+    this.parentNode.classList.add('head-hover');
   });
 
   $headPart.addEventListener('mouseout', function() {
-    this.parentNode.parentNode.classList.remove('head-hover');
+    this.parentNode.classList.remove('head-hover');
   });
 
   $upperPart.addEventListener('mouseover', function() {
-    this.parentNode.parentNode.classList.add('upper-hover');
+    this.parentNode.classList.add('upper-hover');
   });
 
   $upperPart.addEventListener('mouseout', function() {
-    this.parentNode.parentNode.classList.remove('upper-hover');
+    this.parentNode.classList.remove('upper-hover');
   });
 
   $lowerPart.addEventListener('mouseover', function() {
-    this.parentNode.parentNode.classList.add('lower-hover');
+    this.parentNode.classList.add('lower-hover');
   });
 
   $lowerPart.addEventListener('mouseout', function() {
-    this.parentNode.parentNode.classList.remove('lower-hover');
+    this.parentNode.classList.remove('lower-hover');
   });
 
   $headPart.addEventListener('click', function() {
-    this.parentNode.parentNode.className = 'body-box head-click';
+    this.parentNode.className = 'body-box head-click';
   });
 
   $upperPart.addEventListener('click', function() {
-    this.parentNode.parentNode.className = 'body-box upper-click';
+    this.parentNode.className = 'body-box upper-click';
   });
 
   $lowerPart.addEventListener('click', function() {
-    this.parentNode.parentNode.className = 'body-box lower-click';
+    this.parentNode.className = 'body-box lower-click';
   });
 
   function checkSelectedPartDetail(part) {
